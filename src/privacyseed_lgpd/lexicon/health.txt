@@ -1,0 +1,17 @@
+# privacyseed-lgpd lexicon. One term per line; matching ignores case and accents.
+# Curated by Privacy Seed. Experimental: see README.
+diabetes
+câncer
+hipertensão
+HIV
+aids
+depressão
+transtorno de ansiedade
+esquizofrenia
+transtorno bipolar
+autismo
+gravidez
+gestante
+quimioterapia
+hemodiálise
+insulina

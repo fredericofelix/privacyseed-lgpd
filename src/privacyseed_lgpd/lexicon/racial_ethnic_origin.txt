@@ -1,0 +1,9 @@
+# privacyseed-lgpd lexicon. One term per line; matching ignores case and accents.
+# Curated by Privacy Seed. Experimental: see README.
+pessoa negra
+pessoa preta
+pardo
+parda
+indígena
+quilombola
+raça/cor

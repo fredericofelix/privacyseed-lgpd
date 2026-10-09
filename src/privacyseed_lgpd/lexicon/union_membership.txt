@@ -1,0 +1,7 @@
+# privacyseed-lgpd lexicon. One term per line; matching ignores case and accents.
+# Curated by Privacy Seed. Experimental: see README.
+sindicalizado
+sindicalizada
+filiado ao sindicato
+filiada ao sindicato
+membro do sindicato

@@ -1,0 +1,7 @@
+# privacyseed-lgpd lexicon. One term per line; matching ignores case and accents.
+# Curated by Privacy Seed. Experimental: see README.
+filiado ao partido
+filiada ao partido
+membro da igreja
+maçom
+maçonaria

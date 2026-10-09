@@ -1,0 +1,7 @@
+# privacyseed-lgpd lexicon. One term per line; matching ignores case and accents.
+# Curated by Privacy Seed. Experimental: see README.
+impressão digital
+biometria
+reconhecimento facial
+template biométrico
+leitura da íris

@@ -1,0 +1,9 @@
+# privacyseed-lgpd lexicon. One term per line; matching ignores case and accents.
+# Curated by Privacy Seed. Experimental: see README.
+eleitor de esquerda
+eleitora de esquerda
+eleitor de direita
+eleitora de direita
+simpatizante do partido
+militante político
+militante política
