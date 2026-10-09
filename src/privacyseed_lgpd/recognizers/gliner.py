@@ -10,8 +10,8 @@ from ._model import extract, load_model
 GLINER_LABELS = {"person": "person_name", "address": "address", "date_of_birth": "birth_date"}
 
 # The model over-predicts "person" for organisations and products (model card),
-# so its threshold is higher. Tuned on the golden set in Task 9.
-DEFAULT_THRESHOLDS = {"person": 0.6, "address": 0.5, "date_of_birth": 0.5}
+# so its threshold is higher. Values tuned on golden set v0.
+DEFAULT_THRESHOLDS = {"person": 0.6, "address": 0.4, "date_of_birth": 0.5}
 
 
 class GlinerRecognizer:

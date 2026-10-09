@@ -1,0 +1,68 @@
+{"id": "g001", "marked": "Olá, sou [[person_name|Mariana Teixeira]], meu CPF é [[cpf|123.456.789-09]] e meu e-mail é [[email|mariana.teixeira@exemplo.com.br]].", "tags": ["support_chat"]}
+{"id": "g002", "marked": "Pode ligar no [[phone|(31) 99876-5432]] depois das 18h.", "tags": ["support_chat"]}
+{"id": "g003", "marked": "CPF informado: 123.456.789-00. Confirme o número, por favor.", "tags": ["invalid_check_digit"]}
+{"id": "g004", "marked": "Fornecedor: Papelaria Aurora Ltda., CNPJ [[cnpj|11.222.333/0001-81]].", "tags": ["company"]}
+{"id": "g005", "marked": "O total da nota é R$ 1.234,56, vencimento em 10/11/2026, pedido 4471.", "tags": ["no_personal_data"]}
+{"id": "g006", "marked": "Paciente relata [[sensitive_data:health|diabetes]] e faz uso de [[sensitive_data:health|insulina]].", "tags": ["medical_note"]}
+{"id": "g007", "marked": "Envie para [[address|Rua das Acácias, 120, apto 302]], CEP [[cep|30130-100]].", "tags": ["form"]}
+{"id": "g008", "marked": "Nome: [[person_name|Rafael Duarte Lima]] | CPF: [[cpf|787.789.328-07]] | Nascimento: [[birth_date|14/02/1990]] | Celular: [[phone|(21) 98123-4567]]", "tags": ["form"]}
+{"id": "g009", "marked": "Atualize meu e-mail para [[email|rafa.duarte90@exemplo.com]], por favor.", "tags": ["support_chat"]}
+{"id": "g010", "marked": "CNH nº [[cnh|78778932870]], validade 05/2031.", "tags": ["support_chat"]}
+{"id": "g011", "marked": "Título de eleitor [[voter_id|7877 8932 2615]], zona 33, seção 120.", "tags": ["form"]}
+{"id": "g012", "marked": "PIS [[pis|787.78932.87-3]] para cadastro no eSocial.", "tags": ["hr_email"]}
+{"id": "g013", "marked": "Pagamento no cartão [[credit_card|4787 7893 2879 2170]], parcelado em 3x.", "tags": ["support_chat"]}
+{"id": "g014", "marked": "Sou MEI: [[person_name|Juliana Prado Nunes]], CNPJ [[cnpj|87.921.742/0001-38]], atendo na [[address|Rua Pernambuco, 455, sala 2]].", "tags": ["cnpj_mei"]}
+{"id": "g015", "marked": "Seu CPF [[cpf|792.174.218-12]] foi validado. Confirme: o CPF informado é [[cpf|792.174.218-12]]?", "tags": ["repeated_entity"]}
+{"id": "g016", "marked": "CPF [[cpf|09679290832]] e telefone [[phone|(11) 98765-4321]].", "tags": ["phone_vs_id"]}
+{"id": "g017", "marked": "Ele precisa sair cedo às terças para as [[sensitive_data:health|sessões com o psiquiatra]].", "tags": ["implicit_sensitive"]}
+{"id": "g018", "marked": "O colaborador [[person_name|Marcos Vinícius Alves]] pediu folga no feriado por ser [[sensitive_data:religious_belief|evangélico]].", "tags": ["hr_email"]}
+{"id": "g019", "marked": "Ela é [[sensitive_data:religious_belief|espírita]] e participa de trabalhos voluntários.", "tags": ["support_chat"]}
+{"id": "g020", "marked": "No grupo, [[person_name|Paulo Henrique Sá]] se declarou [[sensitive_data:political_opinion|eleitor de esquerda]].", "tags": ["support_chat"]}
+{"id": "g021", "marked": "A candidata disse que é [[sensitive_data:political_opinion|militante política]] desde a faculdade.", "tags": ["hr_email"]}
+{"id": "g022", "marked": "[[person_name|Cláudia Ferraz]] é [[sensitive_data:union_membership|sindicalizada]] e pediu desconto da contribuição em folha.", "tags": ["hr_email"]}
+{"id": "g023", "marked": "Lista de funcionários [[sensitive_data:union_membership|filiados ao sindicato]] dos metalúrgicos.", "tags": ["hr_email"]}
+{"id": "g024", "marked": "Ele é [[sensitive_data:org_membership|filiado ao partido]] desde 2015, segundo a ficha.", "tags": ["hr_email"]}
+{"id": "g025", "marked": "No currículo consta que é [[sensitive_data:org_membership|maçom]].", "tags": ["hr_email"]}
+{"id": "g026", "marked": "Autodeclaração: [[sensitive_data:racial_ethnic_origin|pessoa preta]].", "tags": ["form"]}
+{"id": "g027", "marked": "A paciente é [[sensitive_data:racial_ethnic_origin|indígena]], da etnia guarani.", "tags": ["medical_note"]}
+{"id": "g028", "marked": "[[person_name|Tiago Moreira]] comentou que é [[sensitive_data:sex_life|bissexual]].", "tags": ["support_chat"]}
+{"id": "g029", "marked": "Ele contou ao RH que é [[sensitive_data:sex_life|gay]] e sofreu comentários da equipe.", "tags": ["hr_email"]}
+{"id": "g030", "marked": "O resultado do [[sensitive_data:genetic|exame de DNA]] de [[person_name|Bruno Castro]] saiu ontem.", "tags": ["medical_note"]}
+{"id": "g031", "marked": "O teste indicou [[sensitive_data:genetic|mutação genética]] no gene [[sensitive_data:genetic|BRCA1]].", "tags": ["medical_note"]}
+{"id": "g032", "marked": "Cadastro da [[sensitive_data:biometric|biometria facial]] concluído para [[person_name|Renata Siqueira]].", "tags": ["form"]}
+{"id": "g033", "marked": "Registro de ponto por [[sensitive_data:biometric|impressão digital]] a partir de segunda.", "tags": ["hr_email"]}
+{"id": "g034", "marked": "O app usa biometria para liberar o acesso.", "tags": ["no_personal_data"]}
+{"id": "g035", "marked": "Atestado: [[person_name|Fernanda Lopes]] em tratamento de [[sensitive_data:health|depressão]].", "tags": ["medical_note"]}
+{"id": "g036", "marked": "[[sensitive_data:health|Gestante]] de 20 semanas, consulta marcada para sexta.", "tags": ["medical_note"]}
+{"id": "g037", "marked": "Prezado RH, segue o PIS [[pis|921.74218.09-7]] do novo colaborador [[person_name|Diego Rocha Martins]], nascido em [[birth_date|03/09/1998]].", "tags": ["hr_email"]}
+{"id": "g038", "marked": "Número do NIS: [[pis|67929081006]].", "tags": ["form"]}
+{"id": "g039", "marked": "Benefício vinculado ao NIT [[pis|33907579384]].", "tags": ["form"]}
+{"id": "g040", "marked": "Cadastro PASEP [[pis|347.01746.81-0]] atualizado.", "tags": ["hr_email"]}
+{"id": "g041", "marked": "Carteira de motorista: [[cnh|79217421821]], categoria B.", "tags": ["form"]}
+{"id": "g042", "marked": "Envie foto da CNH [[cnh|09679290823]] frente e verso.", "tags": ["support_chat"]}
+{"id": "g043", "marked": "Habilitação nº [[cnh|10033907597]] suspensa por pontos.", "tags": ["support_chat"]}
+{"id": "g044", "marked": "CNH: [[cnh|79383470149]] — [[person_name|Lucas Ferreira Bastos]].", "tags": ["form"]}
+{"id": "g045", "marked": "Inscrição eleitoral [[voter_id|8792 1742 0310]] regular.", "tags": ["form"]}
+{"id": "g046", "marked": "Título eleitoral nº [[voter_id|8096 7929 0191]], zona 12.", "tags": ["form"]}
+{"id": "g047", "marked": "Seu título de eleitor [[voter_id|8100 3390 2593]] foi transferido para a [[address|Avenida Afonso Pena, 1500]].", "tags": ["support_chat"]}
+{"id": "g048", "marked": "Informe o título de eleitor: [[voter_id|7579 3834 1651]].", "tags": ["form"]}
+{"id": "g049", "marked": "Compra aprovada no cartão [[credit_card|4421 8096 7929 0814]] de [[person_name|Aline Barros Costa]].", "tags": ["support_chat"]}
+{"id": "g050", "marked": "Débito automático: cartão [[credit_card|4003 3907 5793 8349]].", "tags": ["support_chat"]}
+{"id": "g051", "marked": "Número do cartão: [[credit_card|4701746814538403]].", "tags": ["form"]}
+{"id": "g052", "marked": "Cobrança recusada no [[credit_card|4191-6146-1003-3077]], tente outro cartão.", "tags": ["support_chat"]}
+{"id": "g053", "marked": "Nota fiscal emitida para o CNPJ [[cnpj|18.096.792/0001-05]], [[address|Rua da Bahia, 1148]], CEP [[cep|30160-011]].", "tags": ["company"]}
+{"id": "g054", "marked": "Contrato com a Transportes Serra Azul S.A., CNPJ [[cnpj|90810033000190]].", "tags": ["company"]}
+{"id": "g055", "marked": "Fornecedor novo: CNPJ [[cnpj|90.757.938/0001-43]], contato [[person_name|Joana Reis]], [[email|joana.reis@serraazul.com.br]].", "tags": ["company"]}
+{"id": "g056", "marked": "Me chamo [[person_name|Pedro Augusto Neves]], meu e-mail é [[email|pedro.neves@exemplo.net]] e meu celular [[phone|+55 41 99712-3344]].", "tags": ["support_chat"]}
+{"id": "g057", "marked": "Responder para [[email|carla_menezes+rh@empresa-exemplo.com.br]].", "tags": ["hr_email"]}
+{"id": "g058", "marked": "Endereço de entrega: [[address|Rua Tupis, 38, Centro]], CEP [[cep|30190-060]], Belo Horizonte.", "tags": ["form"]}
+{"id": "g059", "marked": "CEP [[cep|01310100]] não encontrado.", "tags": ["support_chat"]}
+{"id": "g060", "marked": "Confirme o CEP [[cep|88015-200]] para calcular o frete.", "tags": ["support_chat"]}
+{"id": "g061", "marked": "Data de nascimento: [[birth_date|21/11/1975]].", "tags": ["form"]}
+{"id": "g062", "marked": "Paciente [[person_name|Helena Prates]], nascida em [[birth_date|02/06/1948]], [[sensitive_data:health|hipertensão]] controlada.", "tags": ["medical_note"]}
+{"id": "g063", "marked": "DN [[birth_date|15.08.2001]]; responsável: [[person_name|Sérgio Antunes]].", "tags": ["medical_note"]}
+{"id": "g064", "marked": "Fixo do escritório: [[phone|(11) 3333-4444]].", "tags": ["support_chat"]}
+{"id": "g065", "marked": "Protocolo 20261009000123 aberto em 09/10/2026. Prazo: 5 dias úteis.", "tags": ["no_personal_data"]}
+{"id": "g066", "marked": "CNPJ 11.222.333/0001-80 consta como inválido na Receita.", "tags": ["invalid_check_digit"]}
+{"id": "g067", "marked": "Pediu para não trabalhar aos sábados porque [[sensitive_data:religious_belief|guarda o sábado]] por motivos de fé.", "tags": ["implicit_sensitive"]}
+{"id": "g068", "marked": "Ligue no [[phone|(31) 98888-7766]]; se não atender, mande mensagem para o [[phone|(31) 98888-7766]].", "tags": ["repeated_entity"]}

@@ -14,7 +14,7 @@ from ..entity import Entity
 from ..taxonomy import load_taxonomy
 from ._model import extract, load_model
 
-DEFAULT_THRESHOLD = 0.6
+DEFAULT_THRESHOLD = 0.7  # tuned on golden set v0
 
 # Each base letter matches its accented forms, so offsets stay on the original text.
 _ACCENTS = {"a": "aáàâã", "e": "eéê", "i": "ií", "o": "oóôõ", "u": "uúü", "c": "cç"}
