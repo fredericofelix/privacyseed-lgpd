@@ -38,3 +38,15 @@ def test_blank_text_skips_model():
     model = FakeModel({})
     assert GlinerRecognizer(model=model).find("   ") == []
     assert model.calls == 0
+
+
+def test_fine_grained_model_labels_map_to_ours():
+    # The model answers "street_address" and "first_name" where "address" and
+    # "person" return nothing (found on the Space examples).
+    text = "Olá, Juliana! Endereço: Rua Tupis, 38."
+    model = FakeModel({
+        "first_name": [span(text, "Juliana", 0.9)],
+        "street_address": [span(text, "Rua Tupis, 38", 0.9)],
+    })
+    found = GlinerRecognizer(model=model).find(text)
+    assert [(e.label, e.text) for e in found] == [("person_name", "Juliana"), ("address", "Rua Tupis, 38")]

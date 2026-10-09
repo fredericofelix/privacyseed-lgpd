@@ -1,11 +1,11 @@
 {
   "address": {
     "tp": 3,
-    "fp": 5,
+    "fp": 6,
     "fn": 2,
-    "precision": 0.375,
+    "precision": 0.333,
     "recall": 0.6,
-    "f1": 0.462
+    "f1": 0.428
   },
   "birth_date": {
     "tp": 5,
@@ -16,12 +16,12 @@
     "f1": 0.909
   },
   "cep": {
-    "tp": 2,
+    "tp": 3,
     "fp": 0,
-    "fn": 3,
+    "fn": 2,
     "precision": 1.0,
-    "recall": 0.4,
-    "f1": 0.571
+    "recall": 0.6,
+    "f1": 0.75
   },
   "cnh": {
     "tp": 5,
@@ -65,11 +65,11 @@
   },
   "person_name": {
     "tp": 17,
-    "fp": 7,
+    "fp": 5,
     "fn": 0,
-    "precision": 0.708,
+    "precision": 0.773,
     "recall": 1.0,
-    "f1": 0.829
+    "f1": 0.872
   },
   "phone": {
     "tp": 7,

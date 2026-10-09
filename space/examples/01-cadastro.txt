@@ -1,0 +1,6 @@
+Ficha de cadastro (dados fictícios)
+Nome: Rafael Duarte Lima
+CPF: 787.789.328-07
+Data de nascimento: 14/02/1990
+E-mail: rafa.duarte90@exemplo.com | Celular: (21) 98123-4567
+Endereço: Rua Tupis, 38, Centro, Belo Horizonte, CEP 30190-060

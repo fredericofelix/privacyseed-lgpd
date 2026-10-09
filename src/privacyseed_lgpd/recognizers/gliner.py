@@ -6,12 +6,19 @@ from ..entity import Entity
 from ..taxonomy import load_taxonomy
 from ._model import extract, load_model
 
-# Model label -> our label.
-GLINER_LABELS = {"person": "person_name", "address": "address", "date_of_birth": "birth_date"}
+# Model label -> our label. The fine-grained labels catch what the broad ones
+# miss: a lone first name ("Olá, Juliana!") or a street in a form line.
+GLINER_LABELS = {
+    "person": "person_name",
+    "first_name": "person_name",
+    "address": "address",
+    "street_address": "address",
+    "date_of_birth": "birth_date",
+}
 
 # The model over-predicts "person" for organisations and products (model card),
 # so its threshold is higher. Values tuned on golden set v0.
-DEFAULT_THRESHOLDS = {"person": 0.6, "address": 0.4, "date_of_birth": 0.5}
+DEFAULT_THRESHOLDS = {"person": 0.6, "first_name": 0.6, "address": 0.4, "street_address": 0.4, "date_of_birth": 0.5}
 
 
 class GlinerRecognizer:

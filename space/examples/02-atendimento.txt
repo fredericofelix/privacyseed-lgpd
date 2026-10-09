@@ -1,0 +1,4 @@
+Cliente: Oi, sou a Juliana Prado Nunes, sou MEI, CNPJ 87.921.742/0001-38.
+Atendente: Olá, Juliana! Para confirmar, qual o seu CPF?
+Cliente: 123.456.789-00. A compra foi no cartão 4787 7893 2879 2170.
+Atendente: Obrigado. Posso ligar no (31) 99876-5432 se a ligação cair?
