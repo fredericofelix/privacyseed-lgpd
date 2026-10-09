@@ -1,7 +1,12 @@
 # privacyseed-lgpd lexicon. One term per line; matching ignores case and accents.
 # Curated by Privacy Seed. Experimental: see README.
+# "biometria" alone is left out on purpose: it often describes a system, not a person's data.
 impressão digital
-biometria
+biometria digital
+biometria facial
+biometria da íris
+biometria de voz
+biometria palmar
 reconhecimento facial
 template biométrico
 leitura da íris

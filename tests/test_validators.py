@@ -46,6 +46,23 @@ def test_voter_id_hand_vector():
     assert v.is_valid_voter_id("1023 8501 0671")
 
 
+def test_voter_id_sp_mg_accepts_both_variants():
+    # SP (01) and MG (02): some implementations turn a rest of 0 into 1; Res. TSE
+    # 23.659/2021 art. 36 does not. Both are accepted so that no real título is missed.
+    # first: 0,4,4,2,6,6,6,5 x 2..9 = 209, 209 % 11 = 0 -> 1 (exception) or 0
+    base = "0442666502"  # MG
+    assert v.voter_check_digits(base) == "13"
+    assert v.voter_check_digits(base, sp_mg_exception=False) == "05"
+    assert v.is_valid_voter_id(base + "13")
+    assert v.is_valid_voter_id(base + "05")
+    assert not v.is_valid_voter_id(base + "03")
+
+
+def test_voter_id_other_states_have_one_variant():
+    base = "1023850106"  # state 06: the exception does not apply
+    assert v.voter_check_digits(base, sp_mg_exception=False) == v.voter_check_digits(base)
+
+
 def test_voter_id_rejects_unknown_state_code():
     base = "1023850129"  # state code 29 does not exist
     assert not v.is_valid_voter_id(base + v.voter_check_digits(base))

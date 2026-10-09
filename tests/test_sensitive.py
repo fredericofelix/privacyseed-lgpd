@@ -49,3 +49,12 @@ def test_gliner_zero_shot_maps_description_to_subcategory():
 
 def test_compile_skips_empty_subcategories():
     assert compile_lexicon({"health": [], "genetic": ["DNA"]}).keys() == {"genetic"}
+
+
+def test_biometric_lexicon_needs_a_qualifier():
+    # Curated by Privacy Seed: "biometria" alone often describes a system, not a person's data.
+    r = SensitiveRecognizer(model=FakeModel({}))
+    assert [e.text for e in r.find("O app usa biometria.") if e.sensitive_subcategory == "biometric"] == []
+    found = r.find("Cadastrei a biometria facial e a biometria digital.")
+    biometric = [e.text for e in found if e.sensitive_subcategory == "biometric"]
+    assert biometric == ["biometria facial", "biometria digital"]

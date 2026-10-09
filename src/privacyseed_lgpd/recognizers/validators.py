@@ -96,10 +96,12 @@ def is_valid_cnh(value: str) -> bool:
     return len(d) == 11 and not _repeated(d) and d[9:] == cnh_check_digits(d[:9])
 
 
-def voter_check_digits(base: str) -> str:
+def voter_check_digits(base: str, sp_mg_exception: bool = True) -> str:
     seq = [int(c) for c in base[:8]]
     state = base[8:10]
-    sp_mg = state in ("01", "02")  # SP and MG use 1 instead of 0 when the rest is 0
+    # Some implementations give SP (01) and MG (02) a 1 instead of 0 when the rest
+    # is 0; Res. TSE 23.659/2021 art. 36 does not. is_valid_voter_id accepts both.
+    sp_mg = sp_mg_exception and state in ("01", "02")
     rest = sum(d * w for d, w in zip(seq, range(2, 10))) % 11
     first = 1 if rest == 0 and sp_mg else 0 if rest == 10 else rest
     rest = (int(state[0]) * 7 + int(state[1]) * 8 + first * 9) % 11
@@ -113,7 +115,7 @@ def is_valid_voter_id(value: str) -> bool:
         len(d) == 12
         and not _repeated(d)
         and int(d[8:10]) in _VOTER_STATES
-        and d[10:] == voter_check_digits(d[:10])
+        and d[10:] in {voter_check_digits(d[:10]), voter_check_digits(d[:10], sp_mg_exception=False)}
     )
 
 
