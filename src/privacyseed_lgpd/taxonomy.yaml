@@ -1,0 +1,142 @@
+# Single source of labels for privacyseed-lgpd. IDs are stable: idea 2 (benchmark)
+# fills maps_to without renaming them. Text shown to users is Portuguese.
+version: 1
+
+labels:
+  cpf:
+    name: CPF
+    tag: CPF
+    lgpd_category: art5_I
+    article: "Art. 5º, I"
+    description: Cadastro de Pessoas Físicas, identifica a pessoa natural.
+    default_action: anonymize
+    maps_to: {arthrod: null, fastino: null, presidio: null}
+  cnpj:
+    name: CNPJ
+    tag: CNPJ
+    lgpd_category: art5_I
+    article: "Art. 5º, I"
+    description: Cadastro Nacional da Pessoa Jurídica.
+    default_action: flag
+    note: "CNPJ detectado e mantido. Se ele identificar um MEI ou empresário individual, pode ser dado pessoal: anonimize-o."
+    maps_to: {arthrod: null, fastino: null, presidio: null}
+  pis:
+    name: PIS/PASEP/NIS
+    tag: PIS
+    lgpd_category: art5_I
+    article: "Art. 5º, I"
+    description: Número de inscrição do trabalhador (PIS, PASEP, NIS ou NIT).
+    default_action: anonymize
+    maps_to: {arthrod: null, fastino: null, presidio: null}
+  cnh:
+    name: CNH
+    tag: CNH
+    lgpd_category: art5_I
+    article: "Art. 5º, I"
+    description: Número de registro da Carteira Nacional de Habilitação.
+    default_action: anonymize
+    maps_to: {arthrod: null, fastino: null, presidio: null}
+  voter_id:
+    name: Título de eleitor
+    tag: TITULO_ELEITOR
+    lgpd_category: art5_I
+    article: "Art. 5º, I"
+    description: Número de inscrição eleitoral.
+    default_action: anonymize
+    maps_to: {arthrod: null, fastino: null, presidio: null}
+  credit_card:
+    name: Cartão de pagamento
+    tag: CARTAO
+    lgpd_category: art5_I
+    article: "Art. 5º, I"
+    description: Número de cartão de crédito ou débito.
+    default_action: anonymize
+    note: Dado pessoal, mas não é dado sensível pela LGPD.
+    maps_to: {arthrod: null, fastino: null, presidio: null}
+  email:
+    name: E-mail
+    tag: EMAIL
+    lgpd_category: art5_I
+    article: "Art. 5º, I"
+    description: Endereço de e-mail.
+    default_action: anonymize
+    maps_to: {arthrod: null, fastino: null, presidio: null}
+  phone:
+    name: Telefone
+    tag: TELEFONE
+    lgpd_category: art5_I
+    article: "Art. 5º, I"
+    description: Número de telefone fixo ou celular.
+    default_action: anonymize
+    maps_to: {arthrod: null, fastino: null, presidio: null}
+  cep:
+    name: CEP
+    tag: CEP
+    lgpd_category: art5_I
+    article: "Art. 5º, I"
+    description: Código de Endereçamento Postal.
+    default_action: anonymize
+    maps_to: {arthrod: null, fastino: null, presidio: null}
+  person_name:
+    name: Nome
+    tag: NOME
+    lgpd_category: art5_I
+    article: "Art. 5º, I"
+    description: Nome de pessoa natural.
+    default_action: anonymize
+    maps_to: {arthrod: null, fastino: null, presidio: null}
+  address:
+    name: Endereço
+    tag: ENDERECO
+    lgpd_category: art5_I
+    article: "Art. 5º, I"
+    description: Endereço residencial ou de correspondência.
+    default_action: anonymize
+    maps_to: {arthrod: null, fastino: null, presidio: null}
+  birth_date:
+    name: Data de nascimento
+    tag: DATA_NASCIMENTO
+    lgpd_category: art5_I
+    article: "Art. 5º, I"
+    description: Data de nascimento de pessoa natural.
+    default_action: anonymize
+    maps_to: {arthrod: null, fastino: null, presidio: null}
+  sensitive_data:
+    name: Dado pessoal sensível
+    tag: DADO_SENSIVEL
+    lgpd_category: art5_II
+    article: "Art. 5º, II"
+    description: Dado pessoal sensível (art. 5º, II da LGPD).
+    default_action: anonymize
+    note: "Detecção experimental: revise sempre. Dados sensíveis inferidos de forma indireta podem não ser detectados."
+    maps_to: {arthrod: null, fastino: null, presidio: null}
+
+# Art. 5º, II, item by item. gliner_description is the zero-shot label sent to the model.
+subcategories:
+  racial_ethnic_origin:
+    wording: origem racial ou étnica
+    gliner_description: origem racial ou étnica de uma pessoa
+  religious_belief:
+    wording: convicção religiosa
+    gliner_description: religião ou crença religiosa de uma pessoa
+  political_opinion:
+    wording: opinião política
+    gliner_description: opinião ou preferência política de uma pessoa
+  union_membership:
+    wording: filiação a sindicato
+    gliner_description: filiação de uma pessoa a sindicato
+  org_membership:
+    wording: filiação a organização de caráter religioso, filosófico ou político
+    gliner_description: filiação de uma pessoa a organização religiosa, filosófica ou partido político
+  health:
+    wording: dado referente à saúde
+    gliner_description: condição de saúde, doença, deficiência ou tratamento médico de uma pessoa
+  sex_life:
+    wording: dado referente à vida sexual
+    gliner_description: orientação sexual ou vida sexual de uma pessoa
+  genetic:
+    wording: dado genético
+    gliner_description: dado genético ou resultado de exame de DNA
+  biometric:
+    wording: dado biométrico
+    gliner_description: dado biométrico, como impressão digital ou reconhecimento facial
