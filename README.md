@@ -7,7 +7,7 @@ Detect and anonymize personal data in Brazilian Portuguese text, mapped to the L
 - Names and addresses with a local multilingual GLiNER2 model (`[ml]` extra).
 - Sensitive data (LGPD art. 5, II), **experimental**: curated lexicon + zero-shot.
 
-Demo: https://huggingface.co/spaces/privacyseed/detector-lgpd · Built by [Privacy Seed](https://www.privacyseed.com.br/?utm_source=github&utm_medium=readme&utm_campaign=lgpd-detector)
+Demo: https://huggingface.co/spaces/fred-ai-lab/detector-lgpd · Built by [Privacy Seed](https://www.privacyseed.com.br/?utm_source=github&utm_medium=readme&utm_campaign=lgpd-detector)
 
 ## Install
 
